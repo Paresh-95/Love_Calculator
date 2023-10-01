@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Love Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Love ♥ Calculator</h1>
+        <h4 class="subheading">Get Your Own Love Result Instantly*</h4>
+      </div>
+
+      <div class="maincontent">
+        <div>
+          <!-- Your name Inputfield -->
+          <label class="boy" for="yourname">*Your Name</label><br />
+          <input
+            type="text"
+            id="yourname"
+            placeholder="Enter Your Name"
+            spellcheck="false"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div>
+          <!-- His/Her name Inputfield -->
+          <label class="girl" for="theirname">*His/Her Name</label><br />
+          <input
+            type="text"
+            id="theirname"
+            placeholder="Enter His/Her Name"
+            spellcheck="false"
+            maxlength="20"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit">CALCULATE ❤</button>
+      
+
+      <div class="result">
+        <h2>Result</h2>
+        <div class="divider"></div>
+        <p id="yourlovescoreis"></p>
+        <h1 id="score"></h1>
+        <p id="loveinfo"></p>
+        <p
+          id="reload"
+          style="
+            cursor: pointer;
+            display: none;
+            margin-top: 30px;
+            font-weight: 700;
+            color: ff4136;
+          "
+          onClick="window.location.reload();"
+        >
+          ↺ Re Calculate
+        </p>
+        <div class="img">
+          <div id="content">
+            <img class="meme-img" src="https://i.pinimg.com/550x/26/c1/2b/26c12b2fbba32b88e1178a56e082b45c.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <p style="color: #000">
+        Made By
+        <a
+          style="text-decoration: none; font-weight: bold; color: #ff4136"
+          target="_blank"
+          href=""
+          >Paresh Bhamare</a
+        >
+        <br />
+        <small>Made for Fun and Pratice Purposes Only*</small>
+        
+      </p>
+    </div>
+
+    <script type="text/javascript"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
