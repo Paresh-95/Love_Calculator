@@ -144,7 +144,7 @@ calcBtn.addEventListener("click", function (e) {
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Ertuğrul Gazi & Halime Sultan. You should get married with " +
+      " love each other like Virat and Anushkaa. You should get married with " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
