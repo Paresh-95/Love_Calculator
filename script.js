@@ -5,8 +5,12 @@ var yourName = document.getElementById("yourname"),
   yourlovescoreis = document.getElementById("yourlovescoreis"),
   loveScore = Math.random() * 100,
   loveInfo = document.getElementById("loveinfo"),
+  imageContainer = document.getElementById("meme"),
   reloadBtn = document.getElementById("reload");
 loveScore = Math.floor(loveScore) + 1;
+
+
+
 
 //capitalize input values
 function capitalize_Words(str) {
@@ -35,13 +39,42 @@ calcBtn.addEventListener("click", function (e) {
   loveScore = Math.random() * 100; //delete this line if you want to keep the same value in the same session.
   e.preventDefault();
   if (yourName.value == "" && theirName.value == "") {
-    alert("You can't leave fields empty");
+
+    imageContainer.src = "https://media.tenor.com/yw9Bf-X_898AAAAM/welcome-bhai-ye-to-koi-response-hi-nahi-de-raha-hai.gif";
+    imageContainer.alt = "No Response Meme!";
+    imageContainer.scrollIntoView();
+    setTimeout(() => {
+      alert("You can't leave fields empty");
+    }
+    ,1500);
+   
+
+
   }
-  if (yourName.value == "") {
-    alert("Please Enter Your Name");
+  else if (yourName.value == "") {
+    
+    imageContainer.src = "https://media.tenor.com/uHDvIcq-44MAAAAM/dhol-movie-dhol-movie-memes.gif  ";
+    imageContainer.alt = "kya naam tera meme!";
+    imageContainer.scrollIntoView();
+    setTimeout(() => {
+      alert("Tera naam Dal");   
+     }
+    ,1500);
+   
+
+
   }
-  if (theirName.value == "") {
-    alert("Please Enter His/Her Name");
+  else if (theirName.value == "") {
+    
+    imageContainer.src = "https://media.tenor.com/3VMCCyQXcB8AAAAM/naam-kya-hai-uska-vikrant-massey.gif";
+    imageContainer.alt = "Tumara naam kya he meme";
+    imageContainer.scrollIntoView();
+    setTimeout(() => {
+      alert("Please Enter His/Her Name");
+    }
+    ,1500);
+   
+
   }
 
   //lovescore conditions
